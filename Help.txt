@@ -1,0 +1,62 @@
+SciCalc is a calculator that can solve string equations.
+Ex:
+z=ANS*{[2*SIN(PI/2)+e²+5E-LN(1)]/n!}.
+======================================================
+QUICK REFERENCE:
+1. Use parenthesis to change the order of operations.
+Ex. 2*(2+2)
+     =8
+
+2. Lower case letters are for variables a-z, you can set variables with the '=' operator
+(NOTE: "e" is reserved for the natural log base)
+	Ex. z=(x+2*y)
+
+3. You don't always have to put a '*' (multiplication) operator between letters, numbers,
+parenthesis, and function names, but it is recommended that you do:
+	Ex.   2ySIN(0)z    <is the same as>    2*y*SIN(0)*z	
+
+4. Uppercase letters are for function names
+Trig: SIN, ASIN, COS, ACOS, TAN, ATAN
+Logs: LOG, LN, E
+Other: SQRT, ABS
+	Ex. TAN(4)
+	(Trig. functions are in degrees by default, see options)
+	Also note that sometimes using PI with trig. functions in radians will not
+	yield exact 0 answers where applicable.
+	Ex.	5E(-3)
+		5E-3
+		5*10^-3
+		(All = 5000)
+
+5. Letters and words reserved for constants:
+ANS	Last answer
+PI	3.14159265358979323846264338327950
+e	2.7182818281828182
+Variables:
+a-z	Use '=' operator to assign a value to a variable.
+	EX. a=60
+		x=2*SIN(a)
+	All variables default to a value of 0.
+
+Any value greater or less than 1.79769313486E(308) in magnitude is infinity.
+
+
+======================================================
+OPERATORS (in order):
+
+()	Parenthesis
+F	Functions (trig, log, E)
+!	Factorial
+^	Power
+-	Negative
+*	Multiplication
+/	Division
++	Addition
+-	Subtraction
+=	Assignment
+
+BUTTONS:
+Copy - Press to copy the last answer to the Windows Clipboard, if text
+	is selected it will simply copy the selected text to the clipboard.
+Paste - Pastes clipboard info into the edit box.
+Prev - Press to cycle through the last 20 strings entered.
