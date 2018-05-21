@@ -38,3 +38,7 @@
 *.idb
 *.bsc
 *.ncb
+*.htm
+*.dep
+*.user
+*.manifest

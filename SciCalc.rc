@@ -1,4 +1,4 @@
-//Microsoft Developer Studio generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -27,18 +27,18 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE DISCARDABLE 
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE DISCARDABLE 
+2 TEXTINCLUDE 
 BEGIN
     "#include ""afxres.h""\r\n"
     "\0"
 END
 
-3 TEXTINCLUDE DISCARDABLE 
+3 TEXTINCLUDE 
 BEGIN
     "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
     "#define _AFX_NO_OLE_RESOURCES\r\n"
@@ -66,36 +66,33 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SciCalc.ico"
+IDR_MAINFRAME           ICON                    "res\\SciCalc.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 67
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 67
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About SciCalc"
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "SciCalc Version 1.01",IDC_STATIC,40,10,119,8,
-                    SS_NOPREFIX
+    LTEXT           "SciCalc Version 1.01",IDC_STATIC,40,10,119,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
     DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
-    LTEXT           "Created By: MasterHD@cox.net",IDC_STATIC,40,40,119,8
+    LTEXT           "Created By: Master1HD@gmail.com",IDC_STATIC,40,40,139,8
 END
 
 IDD_SCICALC_DIALOG DIALOGEX 0, 0, 186, 247
-STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
-    WS_SYSMENU
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
 CAPTION "SciCalc"
 FONT 8, "Arial", 0, 0, 0x1
 BEGIN
     EDITTEXT        IDC_COMMAND,7,74,172,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_CONSOLE,7,7,172,68,ES_MULTILINE | ES_AUTOVSCROLL | 
-                    WS_VSCROLL
+    EDITTEXT        IDC_CONSOLE,7,7,172,68,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
     PUSHBUTTON      "&1",IDC_1,7,185,26,16
     PUSHBUTTON      "&2",IDC_2,36,185,26,16
     PUSHBUTTON      "&3",IDC_3,65,185,26,16
@@ -116,8 +113,7 @@ BEGIN
     PUSHBUTTON      "&Back",IDC_BACKSPACE,124,166,26,16,BS_BITMAP
     PUSHBUTTON      "Help",IDC_HELP1,153,91,26,10
     PUSHBUTTON      "&^",IDC_POWER,94,132,26,12,BS_BITMAP
-    CONTROL         "S&hift",IDC_SHIFT,"Button",BS_AUTOCHECKBOX | 
-                    BS_PUSHLIKE | WS_TABSTOP,7,91,26,10
+    CONTROL         "S&hift",IDC_SHIFT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,91,26,10
     PUSHBUTTON      "&SIN",IDC_SIN,7,111,26,12
     PUSHBUTTON      "&COS",IDC_COS,36,111,26,12
     PUSHBUTTON      "&TAN",IDC_TAN,65,111,26,12
@@ -151,32 +147,28 @@ BEGIN
     PUSHBUTTON      "&Graph",IDC_GRAPH,94,91,26,10
 END
 
-IDD_HELP DIALOG DISCARDABLE  0, 0, 351, 281
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_HELP DIALOG  0, 0, 351, 281
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Help"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "Close",IDOK,294,260,50,14
-    EDITTEXT        IDC_TEXT,7,7,337,249,ES_MULTILINE | ES_AUTOVSCROLL | 
-                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_TEXT,7,7,337,249,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
 END
 
-IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 246, 170
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_OPTIONS DIALOG  0, 0, 246, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Options"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,189,7,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,189,24,50,14
-    CONTROL         "Radians",IDC_ANGLE1,"Button",BS_AUTORADIOBUTTON | 
-                    WS_GROUP,15,20,42,10
+    CONTROL         "Radians",IDC_ANGLE1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,20,42,10
     GROUPBOX        "Angles",IDC_STATIC,7,7,103,30
-    CONTROL         "Degrees",IDC_ANGLE2,"Button",BS_AUTORADIOBUTTON,63,21,
-                    43,10
+    CONTROL         "Degrees",IDC_ANGLE2,"Button",BS_AUTORADIOBUTTON,63,21,43,10
 END
 
 
-#ifndef _MAC
 /////////////////////////////////////////////////////////////////////////////
 //
 // Version
@@ -199,18 +191,14 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "Comments", "\0"
-            VALUE "CompanyName", "MasterHD\0"
-            VALUE "FileDescription", "SciCalc MFC Application\0"
-            VALUE "FileVersion", "1, 0, 1, 1\0"
-            VALUE "InternalName", "SciCalc\0"
-            VALUE "LegalCopyright", "Copyright (C) 2007\0"
-            VALUE "LegalTrademarks", "\0"
-            VALUE "OriginalFilename", "SciCalc.EXE\0"
-            VALUE "PrivateBuild", "\0"
-            VALUE "ProductName", "SciCalc Application\0"
-            VALUE "ProductVersion", "1, 0, 1, 1\0"
-            VALUE "SpecialBuild", "\0"
+            VALUE "CompanyName", "MasterHD"
+            VALUE "FileDescription", "SciCalc MFC Application"
+            VALUE "FileVersion", "1, 0, 1, 1"
+            VALUE "InternalName", "SciCalc"
+            VALUE "LegalCopyright", "Copyright (C) 2007"
+            VALUE "OriginalFilename", "SciCalc.EXE"
+            VALUE "ProductName", "SciCalc Application"
+            VALUE "ProductVersion", "1, 0, 1, 1"
         END
     END
     BLOCK "VarFileInfo"
@@ -219,8 +207,6 @@ BEGIN
     END
 END
 
-#endif    // !_MAC
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -228,7 +214,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO DISCARDABLE 
+GUIDELINES DESIGNINFO 
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -270,26 +256,26 @@ END
 // Bitmap
 //
 
-IDB_BACK                BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
-IDB_CLEARALL            BITMAP  DISCARDABLE     "res\\back1.bmp"
-IDB_ADD                 BITMAP  DISCARDABLE     "res\\back2.bmp"
-IDB_SUBTRACT            BITMAP  DISCARDABLE     "res\\subtract.bmp"
-IDB_MULT                BITMAP  DISCARDABLE     "res\\mult.bmp"
-IDB_DIVIDE              BITMAP  DISCARDABLE     "res\\divide.bmp"
-IDB_POWER               BITMAP  DISCARDABLE     "res\\mult1.bmp"
-IDB_PI                  BITMAP  DISCARDABLE     "res\\power1.bmp"
-IDB_INVERSE             BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
-IDB_CP                  BITMAP  DISCARDABLE     "res\\pi1.bmp"
-IDB_OP                  BITMAP  DISCARDABLE     "res\\po.bmp"
-IDB_DEL                 BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
-IDB_EQUAL               BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_BACK                BITMAP                  "res\\bitmap1.bmp"
+IDB_CLEARALL            BITMAP                  "res\\back1.bmp"
+IDB_ADD                 BITMAP                  "res\\back2.bmp"
+IDB_SUBTRACT            BITMAP                  "res\\subtract.bmp"
+IDB_MULT                BITMAP                  "res\\mult.bmp"
+IDB_DIVIDE              BITMAP                  "res\\divide.bmp"
+IDB_POWER               BITMAP                  "res\\mult1.bmp"
+IDB_PI                  BITMAP                  "res\\power1.bmp"
+IDB_INVERSE             BITMAP                  "res\\bmp00001.bmp"
+IDB_CP                  BITMAP                  "res\\pi1.bmp"
+IDB_OP                  BITMAP                  "res\\po.bmp"
+IDB_DEL                 BITMAP                  "res\\bmp00002.bmp"
+IDB_EQUAL               BITMAP                  "res\\bmp00003.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // String Table
 //
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDS_ABOUTBOX            "&About SciCalc..."
 END

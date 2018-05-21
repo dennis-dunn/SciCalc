@@ -561,7 +561,7 @@ CString CSciCalcDlg::Solve(CString strEq)
 		}
 	}
 	//combine digits
-	for(i=0;i<MAX;i++)
+	for(int i=0;i<MAX;i++)
 	{
 		if((m_strLine[i]=='.')&&(m_strLine[i+1]=='#'))
 		{
@@ -573,7 +573,7 @@ CString CSciCalcDlg::Solve(CString strEq)
 				if(m_strLine[j+1]=='#')//more decimal places
 				{
 					power++;
-					m_dVal[j] = m_dVal[j]+(m_dVal[j+1]/pow(10,power));
+					m_dVal[j] = m_dVal[j]+(m_dVal[j+1]/pow(10.0,power));
 					MoveLeft(j+1);//erase current
 					j--;
 				}
@@ -590,7 +590,7 @@ CString CSciCalcDlg::Solve(CString strEq)
 		}
 	}
 	//combine decimals
-	for(i=0;i<MAX;i++)
+	for(int i=0;i<MAX;i++)
 	{
 		if((m_strLine[i]=='#')&&(m_strLine[i+1]=='.')&&(m_strLine[i+2]=='#'))
 		{
@@ -602,7 +602,7 @@ CString CSciCalcDlg::Solve(CString strEq)
 	}
 
 	//Variables
-	for(i=0;i<MAX;i++)
+	for(int i=0;i<MAX;i++)
 	{
 		if((m_strLine[i]=='A')&&(m_strLine[i+1]=='N')&&(m_strLine[i+2]=='S'))
 		{//ANS

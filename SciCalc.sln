@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SciCalc", "SciCalc.vcproj", "{46A68FE7-8CE5-49D8-8E06-5A63271E1761}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46A68FE7-8CE5-49D8-8E06-5A63271E1761}.Debug|Win32.ActiveCfg = Debug|Win32
+		{46A68FE7-8CE5-49D8-8E06-5A63271E1761}.Debug|Win32.Build.0 = Debug|Win32
+		{46A68FE7-8CE5-49D8-8E06-5A63271E1761}.Release|Win32.ActiveCfg = Release|Win32
+		{46A68FE7-8CE5-49D8-8E06-5A63271E1761}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
