@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+*.zip
+
+#MS VS release:
+*.res
+*.sbr
+*.idb
+*.bsc
+*.ncb
